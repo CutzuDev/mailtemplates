@@ -1,0 +1,7 @@
+{
+	"dependencies": {
+		"@react-email/components": "0.0.12",
+		"@types/react": "^18.2.45",
+		"create-email": "^0.0.20"
+	}
+}
