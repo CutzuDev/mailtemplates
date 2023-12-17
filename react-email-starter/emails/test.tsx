@@ -32,15 +32,15 @@ export default function test() {
             />
             <Container className="overflow-hidden rounded-t-xl">
               <Container className="bg-[url(https://i.imgur.com/1iDjcek.png)] bg-cover">
-                <Text className="my-10 text-center text-3xl font-bold !text-white sm:text-5xl">
+                <Text className="my-10 text-center text-3xl font-bold !text-white dark:!text-white sm:text-5xl">
                   Hey there!
                 </Text>
               </Container>
-              <Container className="p-10">
-                <Heading as="h2" className="m-0">
+              <Container className="p-10 dark:!bg-white !bg-white">
+                <Heading as="h2" className=" m-0">
                   {`Hey {username},`}
                 </Heading>
-                <Text className="text-xl font-light !text-slate-700">
+                <Text className="text-xl font-light !text-slate-700 dark:!text-slate-700">
                   Thanks for signing up!
                   <br />
                   Your application is now under review. You will be notified of
@@ -48,7 +48,7 @@ export default function test() {
                 </Text>
               </Container>
             </Container>
-            <Container className="overflow-hidden rounded-b-xl !bg-[#101010] p-5 !text-white dark:!bg-[#101010]">
+            <Container className="overflow-hidden rounded-b-xl !bg-[#101010] p-5 !text-white dark:!bg-[#101010] dark:!text-white">
               <Row align="center" className="mt-5 w-min">
                 <Column align="center" className="w-min px-5">
                   <Img src="https://i.imgur.com/7o6GWyY.png" />
@@ -63,7 +63,7 @@ export default function test() {
               <Row className="my-5 w-min">
                 <Column className="w-min px-1">
                   <Link
-                    className="text-white underline"
+                    className="!text-white underline dark:!text-white"
                     href="mailto:help@sidekicks.co.uk"
                   >
                     Support
@@ -74,7 +74,7 @@ export default function test() {
                 </Column>
                 <Column className="w-min px-1">
                   <Link
-                    className="whitespace-nowrap !text-white underline"
+                    className="whitespace-nowrap !text-white underline dark:!text-white"
                     href=""
                   >
                     Terms & Conditions
@@ -84,7 +84,10 @@ export default function test() {
               <Container className="px-10">
                 <Container className="h-[1px] !bg-neutral-600 dark:!bg-neutral-600" />
               </Container>
-              <Container align="center" className="my-5 !text-neutral-400">
+              <Container
+                align="center"
+                className="my-5 !text-neutral-400 dark:!text-neutral-400"
+              >
                 <Text className="my-0 text-center">
                   All rights reserved 2024 Side Kicks
                 </Text>
